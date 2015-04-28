@@ -25,6 +25,13 @@ public struct CmdUtil {
         return output;
     }
     
+    public static func runAdbInBackground(args: [String]) {
+        var taskQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)
+        dispatch_async(taskQueue, {
+            runAdb(args);
+        })
+    }
+    
     public static func getDevices() -> [Device]? {
         var output = runAdb(["devices"])
         var devices = parseDevices(output)
@@ -47,8 +54,7 @@ public struct CmdUtil {
     
     
     public static func installApk(apkPath: String) -> Bool {
-        var out = runAdb(getInstallCmd(getDevices()![0], path: apkPath).componentsSeparatedByString(" "));
-        println("out-=-=-=-=-=-=\(out)");
+        runAdbInBackground(getInstallCmd(getDevices()![0], path: apkPath).componentsSeparatedByString(" "));
         return true;
     }
 

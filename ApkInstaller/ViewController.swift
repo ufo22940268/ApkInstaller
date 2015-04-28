@@ -27,8 +27,7 @@ class ViewController: NSViewController {
         openPanel.beginWithCompletionHandler{ (result) -> Void in
             if result == NSFileHandlingPanelOKButton {
                 var apkPath = openPanel.URL
-                if var path = apkPath?.description {
-                    path = "/Users/ccheng/Downloads/218.apk"
+                if var path = apkPath?.path {
                     CmdUtil.installApk(path)
                 }
             }

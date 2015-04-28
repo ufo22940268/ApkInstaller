@@ -45,7 +45,7 @@ class testTests: XCTestCase {
     
     func testInstallCmd() {
         var device = Device(device: "asdf");
-        XCTAssert(CmdUtil.getInstallCmd(device, path: "a.apk") == "-s asdf install a.apk");
+        XCTAssert(CmdUtil.getInstallCmd(device, path: "a.apk") == "-s asdf install -r a.apk");
     }
     
     func testPerformanceExample() {

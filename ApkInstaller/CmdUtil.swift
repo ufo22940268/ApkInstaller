@@ -32,7 +32,7 @@ public struct CmdUtil {
     }
     
     public static func getInstallCmd(device:Device, path:String)-> String {
-        return "-s \(device.id) install \(path)";
+        return "-s \(device.id) install -r \(path)";
     }
     
     public static func parseDevices(output: String) -> [Device]? {

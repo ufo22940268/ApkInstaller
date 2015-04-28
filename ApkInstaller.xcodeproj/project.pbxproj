@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80226D971AEF50700081BB61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80226D961AEF50700081BB61 /* AppDelegate.swift */; };
+		80226D991AEF50700081BB61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80226D981AEF50700081BB61 /* ViewController.swift */; };
+		80226D9B1AEF50700081BB61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80226D9A1AEF50700081BB61 /* Images.xcassets */; };
+		80226D9E1AEF50700081BB61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80226D9C1AEF50700081BB61 /* Main.storyboard */; };
+		80226DAA1AEF50700081BB61 /* ApkInstallerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80226DA91AEF50700081BB61 /* ApkInstallerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80226DA41AEF50700081BB61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80226D891AEF50700081BB61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80226D901AEF50700081BB61;
+			remoteInfo = ApkInstaller;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80226D911AEF50700081BB61 /* ApkInstaller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApkInstaller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80226D951AEF50700081BB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80226D961AEF50700081BB61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80226D981AEF50700081BB61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80226D9A1AEF50700081BB61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		80226D9D1AEF50700081BB61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80226DA31AEF50700081BB61 /* ApkInstallerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApkInstallerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80226DA81AEF50700081BB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80226DA91AEF50700081BB61 /* ApkInstallerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApkInstallerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80226D8E1AEF50700081BB61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80226DA01AEF50700081BB61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80226D881AEF50700081BB61 = {
+			isa = PBXGroup;
+			children = (
+				80226D931AEF50700081BB61 /* ApkInstaller */,
+				80226DA61AEF50700081BB61 /* ApkInstallerTests */,
+				80226D921AEF50700081BB61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80226D921AEF50700081BB61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80226D911AEF50700081BB61 /* ApkInstaller.app */,
+				80226DA31AEF50700081BB61 /* ApkInstallerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80226D931AEF50700081BB61 /* ApkInstaller */ = {
+			isa = PBXGroup;
+			children = (
+				80226D961AEF50700081BB61 /* AppDelegate.swift */,
+				80226D981AEF50700081BB61 /* ViewController.swift */,
+				80226D9A1AEF50700081BB61 /* Images.xcassets */,
+				80226D9C1AEF50700081BB61 /* Main.storyboard */,
+				80226D941AEF50700081BB61 /* Supporting Files */,
+			);
+			path = ApkInstaller;
+			sourceTree = "<group>";
+		};
+		80226D941AEF50700081BB61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80226D951AEF50700081BB61 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80226DA61AEF50700081BB61 /* ApkInstallerTests */ = {
+			isa = PBXGroup;
+			children = (
+				80226DA91AEF50700081BB61 /* ApkInstallerTests.swift */,
+				80226DA71AEF50700081BB61 /* Supporting Files */,
+			);
+			path = ApkInstallerTests;
+			sourceTree = "<group>";
+		};
+		80226DA71AEF50700081BB61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80226DA81AEF50700081BB61 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80226D901AEF50700081BB61 /* ApkInstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80226DAD1AEF50700081BB61 /* Build configuration list for PBXNativeTarget "ApkInstaller" */;
+			buildPhases = (
+				80226D8D1AEF50700081BB61 /* Sources */,
+				80226D8E1AEF50700081BB61 /* Frameworks */,
+				80226D8F1AEF50700081BB61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApkInstaller;
+			productName = ApkInstaller;
+			productReference = 80226D911AEF50700081BB61 /* ApkInstaller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80226DA21AEF50700081BB61 /* ApkInstallerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80226DB01AEF50700081BB61 /* Build configuration list for PBXNativeTarget "ApkInstallerTests" */;
+			buildPhases = (
+				80226D9F1AEF50700081BB61 /* Sources */,
+				80226DA01AEF50700081BB61 /* Frameworks */,
+				80226DA11AEF50700081BB61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80226DA51AEF50700081BB61 /* PBXTargetDependency */,
+			);
+			name = ApkInstallerTests;
+			productName = ApkInstallerTests;
+			productReference = 80226DA31AEF50700081BB61 /* ApkInstallerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80226D891AEF50700081BB61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Frank Cheng";
+				TargetAttributes = {
+					80226D901AEF50700081BB61 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					80226DA21AEF50700081BB61 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 80226D901AEF50700081BB61;
+					};
+				};
+			};
+			buildConfigurationList = 80226D8C1AEF50700081BB61 /* Build configuration list for PBXProject "ApkInstaller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80226D881AEF50700081BB61;
+			productRefGroup = 80226D921AEF50700081BB61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80226D901AEF50700081BB61 /* ApkInstaller */,
+				80226DA21AEF50700081BB61 /* ApkInstallerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80226D8F1AEF50700081BB61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80226D9B1AEF50700081BB61 /* Images.xcassets in Resources */,
+				80226D9E1AEF50700081BB61 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80226DA11AEF50700081BB61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80226D8D1AEF50700081BB61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80226D991AEF50700081BB61 /* ViewController.swift in Sources */,
+				80226D971AEF50700081BB61 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80226D9F1AEF50700081BB61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80226DAA1AEF50700081BB61 /* ApkInstallerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80226DA51AEF50700081BB61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80226D901AEF50700081BB61 /* ApkInstaller */;
+			targetProxy = 80226DA41AEF50700081BB61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80226D9C1AEF50700081BB61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80226D9D1AEF50700081BB61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80226DAB1AEF50700081BB61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80226DAC1AEF50700081BB61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		80226DAE1AEF50700081BB61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ApkInstaller/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		80226DAF1AEF50700081BB61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ApkInstaller/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		80226DB11AEF50700081BB61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ApkInstallerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApkInstaller.app/Contents/MacOS/ApkInstaller";
+			};
+			name = Debug;
+		};
+		80226DB21AEF50700081BB61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ApkInstallerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApkInstaller.app/Contents/MacOS/ApkInstaller";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80226D8C1AEF50700081BB61 /* Build configuration list for PBXProject "ApkInstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80226DAB1AEF50700081BB61 /* Debug */,
+				80226DAC1AEF50700081BB61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80226DAD1AEF50700081BB61 /* Build configuration list for PBXNativeTarget "ApkInstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80226DAE1AEF50700081BB61 /* Debug */,
+				80226DAF1AEF50700081BB61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80226DB01AEF50700081BB61 /* Build configuration list for PBXNativeTarget "ApkInstallerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80226DB11AEF50700081BB61 /* Debug */,
+				80226DB21AEF50700081BB61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80226D891AEF50700081BB61 /* Project object */;
+}

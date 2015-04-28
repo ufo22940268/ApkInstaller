@@ -14,6 +14,7 @@
 		80226DAA1AEF50700081BB61 /* ApkInstallerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80226DA91AEF50700081BB61 /* ApkInstallerTests.swift */; };
 		80226DB51AEF50A30081BB61 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80226DB31AEF50A30081BB61 /* Device.swift */; };
 		80226DB61AEF50A30081BB61 /* CmdUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80226DB41AEF50A30081BB61 /* CmdUtil.swift */; };
+		80226DBA1AEF58190081BB61 /* adb in Resources */ = {isa = PBXBuildFile; fileRef = 80226DB91AEF58190081BB61 /* adb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		80226DA91AEF50700081BB61 /* ApkInstallerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApkInstallerTests.swift; sourceTree = "<group>"; };
 		80226DB31AEF50A30081BB61 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		80226DB41AEF50A30081BB61 /* CmdUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CmdUtil.swift; sourceTree = "<group>"; };
+		80226DB91AEF58190081BB61 /* adb */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = adb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		80226D931AEF50700081BB61 /* ApkInstaller */ = {
 			isa = PBXGroup;
 			children = (
+				80226DB91AEF58190081BB61 /* adb */,
 				80226DB31AEF50A30081BB61 /* Device.swift */,
 				80226DB41AEF50A30081BB61 /* CmdUtil.swift */,
 				80226D961AEF50700081BB61 /* AppDelegate.swift */,
@@ -195,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80226DBA1AEF58190081BB61 /* adb in Resources */,
 				80226D9B1AEF50700081BB61 /* Images.xcassets in Resources */,
 				80226D9E1AEF50700081BB61 /* Main.storyboard in Resources */,
 			);

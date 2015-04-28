@@ -22,6 +22,16 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func onClick(sender: AnyObject) {
+        var openPanel = NSOpenPanel();
+        openPanel.beginWithCompletionHandler{ (result) -> Void in
+            if result == NSFileHandlingPanelOKButton {
+                var filePath = openPanel.URL
+                
+//                var deivces = CmdUtil.getDevices();
+            }
+        }
+    }
 
 }
 

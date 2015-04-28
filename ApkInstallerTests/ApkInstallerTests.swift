@@ -38,6 +38,11 @@ class testTests: XCTestCase {
         XCTAssert(devices?[0].id == "192.168.56.101:5555");
     }
     
+    func testGetDevices() {
+        var devices = CmdUtil.getDevices()
+        XCTAssert(devices.count >= 0)
+    }
+    
     func testInstallCmd() {
         var device = Device(device: "asdf");
         XCTAssert(CmdUtil.getInstallCmd(device, path: "a.apk") == "-s asdf install a.apk");

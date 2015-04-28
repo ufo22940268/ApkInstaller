@@ -9,6 +9,14 @@
 import Foundation
 
 public struct CmdUtil {
+    
+    
+    
+    public static func getDevices() -> [Device] {
+        var devices = [Device]()
+        return devices;
+    }
+    
     public static func getInstallCmd(device:Device, path:String)-> String {
         return "-s \(device.id) install \(path)";
     }

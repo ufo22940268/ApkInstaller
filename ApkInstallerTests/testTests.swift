@@ -8,7 +8,7 @@
 
 import Cocoa
 import XCTest
-import ApkInstaller
+import test
 
 class testTests: XCTestCase {
     

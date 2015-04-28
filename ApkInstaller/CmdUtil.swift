@@ -53,7 +53,6 @@ public struct CmdUtil {
         return ds;
     }
     
-    
     public static func installApk(apkPath: String) -> Bool {
         runAdbInBackground(getInstallCmd(getDevices()![0], path: apkPath).componentsSeparatedByString(" "), callback: {() -> Void in
             println("finished")

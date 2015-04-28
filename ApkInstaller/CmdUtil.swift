@@ -10,13 +10,11 @@ import Foundation
 
 public struct CmdUtil {
     
-    
-    
-    public static func getDevices() -> [Device]? {
-        var adbPath = NSBundle.mainBundle().pathForResource("adb", ofType: "");
+    public static func runAdb(args:[String]) -> String {
         var task = NSTask()
-        task.launchPath = adbPath!
-        task.arguments = ["devices"];
+        var adbPath = NSBundle.mainBundle().pathForResource("adb", ofType: "");
+        task.launchPath = adbPath!;
+        task.arguments = args;
         
         var pip = NSPipe()
         task.standardOutput = pip
@@ -24,6 +22,11 @@ public struct CmdUtil {
         
         let data = pip.fileHandleForReading.readDataToEndOfFile();
         let output:String = NSString(data: data, encoding: NSUTF8StringEncoding) as String!
+        return output;
+    }
+    
+    public static func getDevices() -> [Device]? {
+        var output = runAdb(["devices"])
         var devices = parseDevices(output)
         return devices;
     }
@@ -42,5 +45,11 @@ public struct CmdUtil {
         return ds;
     }
     
+    
+    public static func installApk(apkPath: String) -> Bool {
+        var out = runAdb(getInstallCmd(getDevices()![0], path: apkPath).componentsSeparatedByString(" "));
+        println("out-=-=-=-=-=-=\(out)");
+        return true;
+    }
 
 }

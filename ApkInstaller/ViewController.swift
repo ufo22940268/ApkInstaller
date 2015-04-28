@@ -26,9 +26,11 @@ class ViewController: NSViewController {
         var openPanel = NSOpenPanel();
         openPanel.beginWithCompletionHandler{ (result) -> Void in
             if result == NSFileHandlingPanelOKButton {
-                var filePath = openPanel.URL
-                
-//                var deivces = CmdUtil.getDevices();
+                var apkPath = openPanel.URL
+                if var path = apkPath?.description {
+                    path = "/Users/ccheng/Downloads/218.apk"
+                    CmdUtil.installApk(path)
+                }
             }
         }
     }

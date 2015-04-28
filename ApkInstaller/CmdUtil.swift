@@ -12,8 +12,19 @@ public struct CmdUtil {
     
     
     
-    public static func getDevices() -> [Device] {
-        var devices = [Device]()
+    public static func getDevices() -> [Device]? {
+        var adbPath = NSBundle.mainBundle().pathForResource("adb", ofType: "");
+        var task = NSTask()
+        task.launchPath = adbPath!
+        task.arguments = ["devices"];
+        
+        var pip = NSPipe()
+        task.standardOutput = pip
+        task.launch();
+        
+        let data = pip.fileHandleForReading.readDataToEndOfFile();
+        let output:String = NSString(data: data, encoding: NSUTF8StringEncoding) as String!
+        var devices = parseDevices(output)
         return devices;
     }
     
@@ -24,8 +35,8 @@ public struct CmdUtil {
     public static func parseDevices(output: String) -> [Device]? {
         var ds = [Device]();
         for (index, line) in enumerate(output.componentsSeparatedByString("\n")) {
-            if index > 0 {
-                ds.append(Device(device: line.componentsSeparatedByString(" ")[0]))
+            if index > 0 && !line.isEmpty {
+                ds.append(Device(device: line.componentsSeparatedByCharactersInSet(NSCharacterSet(charactersInString: "\t "))[0]))
             }
         }
         return ds;

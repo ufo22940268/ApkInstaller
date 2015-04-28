@@ -40,6 +40,7 @@
 		80226DB31AEF50A30081BB61 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		80226DB41AEF50A30081BB61 /* CmdUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CmdUtil.swift; sourceTree = "<group>"; };
 		80226DB91AEF58190081BB61 /* adb */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = adb; sourceTree = "<group>"; };
+		80226DBB1AEF65BE0081BB61 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 		80226D881AEF50700081BB61 = {
 			isa = PBXGroup;
 			children = (
+				80226DBB1AEF65BE0081BB61 /* MyPlayground.playground */,
 				80226D931AEF50700081BB61 /* ApkInstaller */,
 				80226DA61AEF50700081BB61 /* ApkInstallerTests */,
 				80226D921AEF50700081BB61 /* Products */,
@@ -412,6 +414,7 @@
 				80226DAF1AEF50700081BB61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80226DB01AEF50700081BB61 /* Build configuration list for PBXNativeTarget "ApkInstallerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +423,7 @@
 				80226DB21AEF50700081BB61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

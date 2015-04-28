@@ -12,7 +12,7 @@ import ApkInstaller
 
 class testTests: XCTestCase {
     
-    let output_has_devices = "List of devices attached\n" + "192.168.56.101:5555 device";
+    let output_has_devices = "List of devices attached\n" + "192.168.56.101:5555\t device";
     
     override func setUp() {
         super.setUp()
@@ -40,7 +40,7 @@ class testTests: XCTestCase {
     
     func testGetDevices() {
         var devices = CmdUtil.getDevices()
-        XCTAssert(devices.count >= 0)
+        XCTAssert(devices?.count === 1)
     }
     
     func testInstallCmd() {

@@ -15,6 +15,8 @@
 		80226DB51AEF50A30081BB61 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80226DB31AEF50A30081BB61 /* Device.swift */; };
 		80226DB61AEF50A30081BB61 /* CmdUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80226DB41AEF50A30081BB61 /* CmdUtil.swift */; };
 		80226DBA1AEF58190081BB61 /* adb in Resources */ = {isa = PBXBuildFile; fileRef = 80226DB91AEF58190081BB61 /* adb */; };
+		8069B72D1AF05A3E007103D5 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8069B72C1AF05A3E007103D5 /* DeviceController.swift */; };
+		8069B7311AF07551007103D5 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8069B7301AF07551007103D5 /* DeviceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		80226DB41AEF50A30081BB61 /* CmdUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CmdUtil.swift; sourceTree = "<group>"; };
 		80226DB91AEF58190081BB61 /* adb */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = adb; sourceTree = "<group>"; };
 		80226DBB1AEF65BE0081BB61 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		8069B72C1AF05A3E007103D5 /* DeviceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
+		8069B7301AF07551007103D5 /* DeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 				80226D9A1AEF50700081BB61 /* Images.xcassets */,
 				80226D9C1AEF50700081BB61 /* Main.storyboard */,
 				80226D941AEF50700081BB61 /* Supporting Files */,
+				8069B72C1AF05A3E007103D5 /* DeviceController.swift */,
+				8069B7301AF07551007103D5 /* DeviceCell.swift */,
 			);
 			path = ApkInstaller;
 			sourceTree = "<group>";
@@ -222,8 +228,10 @@
 			files = (
 				80226DB51AEF50A30081BB61 /* Device.swift in Sources */,
 				80226D991AEF50700081BB61 /* ViewController.swift in Sources */,
+				8069B72D1AF05A3E007103D5 /* DeviceController.swift in Sources */,
 				80226DB61AEF50A30081BB61 /* CmdUtil.swift in Sources */,
 				80226D971AEF50700081BB61 /* AppDelegate.swift in Sources */,
+				8069B7311AF07551007103D5 /* DeviceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

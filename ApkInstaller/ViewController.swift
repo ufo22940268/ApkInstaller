@@ -12,13 +12,17 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     @IBOutlet weak var selectApk: NSButton!
     @IBOutlet weak var scrollView: NSScrollView!
+    @IBOutlet weak var table: NSTableView!
+    @IBOutlet var consoleView: NSTextView!
     
     var apkPath:String?
     var devices:[Device]?
     
-    @IBOutlet weak var table: NSTableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Set test apk path
+        apkPath = "/Users/ccheng/Downloads/a.apk"
+        
         showDevicesView()
     }
     
@@ -63,16 +67,25 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     }
     
     func tableViewSelectionDidChange(notification: NSNotification) {
-        if let device = devices?[table.selectedRow] {
-            var alert = NSAlert();
-            alert.messageText = "确认安装应用到\(device.id)吗？"
-            alert.addButtonWithTitle("确定")
-            alert.addButtonWithTitle("取消")
-            var int = alert.runModal()
-            if int == 1000 {
-                println("ok \(int)")
-            } else {
-                println("cancel \(int)")
+        println("count \(devices?.count)")
+        println("table \(table.selectedRow)")
+        if devices?.count > table.selectedRow && table.selectedRow != -1 {
+            if let device = devices?[table.selectedRow] {
+                var alert = NSAlert();
+                alert.messageText = "确认安装应用到\(device.id)吗？"
+                alert.addButtonWithTitle("确定")
+                alert.addButtonWithTitle("取消")
+                var int = alert.runModal()
+                if int == 1000 {
+                    CmdUtil.installApk(device, apkPath: apkPath!, updateConsole: {
+                        (msg:String) -> Void in
+                            println("msg: \(msg)");
+                            self.consoleView.string = msg
+                        }
+                    )
+                } else {
+                    println("cancel \(int)")
+                }
             }
         }
     }

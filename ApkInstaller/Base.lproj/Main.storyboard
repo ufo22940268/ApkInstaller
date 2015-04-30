@@ -706,6 +706,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6W7-dk-jpn">
+                                <rect key="frame" x="0.0" y="0.0" width="487" height="131"/>
+                                <clipView key="contentView" misplaced="YES" id="d6O-Fx-zud">
+                                    <rect key="frame" x="1" y="1" width="223" height="133"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="cJO-Fs-1kP">
+                                            <rect key="frame" x="0.0" y="0.0" width="223" height="133"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="470" height="129"/>
+                                            <size key="maxSize" width="470" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="470" height="129"/>
+                                            <size key="maxSize" width="470" height="10000000"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="ebO-dn-iJt">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Ehv-Il-ZyC">
+                                    <rect key="frame" x="224" y="1" width="15" height="133"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VMB-SZ-4Ln">
                                 <rect key="frame" x="179" y="217" width="122" height="19"/>
                                 <buttonCell key="cell" type="roundRect" title="select apk file" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Bc6-kn-4y6">
@@ -717,13 +745,13 @@
                                 </connections>
                             </button>
                             <scrollView hidden="YES" fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fJ-5W-Txz">
-                                <rect key="frame" x="0.0" y="-6" width="487" height="276"/>
+                                <rect key="frame" x="0.0" y="130" width="487" height="140"/>
                                 <clipView key="contentView" misplaced="YES" id="UNd-gU-eeL">
                                     <rect key="frame" x="1" y="17" width="238" height="117"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="h7g-7F-KCw" viewBased="YES" id="zai-iJ-9ce">
-                                            <rect key="frame" x="0.0" y="0.0" width="238" height="117"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="485" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -786,6 +814,7 @@
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="consoleView" destination="cJO-Fs-1kP" id="hV2-KO-VFA"/>
                         <outlet property="scrollView" destination="1fJ-5W-Txz" id="olw-QM-sC9"/>
                         <outlet property="selectApk" destination="VMB-SZ-4Ln" id="clF-nb-OS2"/>
                         <outlet property="table" destination="zai-iJ-9ce" id="qRc-RU-sfw"/>
